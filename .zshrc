@@ -1,6 +1,9 @@
 # 42 specific path for the network drive
 # export PATH=/nfs/2017/o/olkovale/goinfre/brew/bin:~/opt/bin:$PATH
+# ubuntu specific path
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/bin/gcc-5.3.0/bin"
 
+# hopefully portable between mac and ubuntu
 export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
@@ -82,9 +85,21 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+# ubuntu specific aliases
+# alias gc="google-chrome"
+# alias xc="xchat"
+# alias eb="sudo nano /sys/class/backlight/acpi_video0/brightness"
+# alias op="xdg-open"
 #
+# mac and ubuntu aliases
+alias z="zsh"
+alias ez="vim ~/.zshrc"
+alias ev="vim ~/.vimrc"
+alias tb="nc termbin.com 9999"
+#
+# 42 specific
 # stop taking a fresh dump for each PC in the lab
-compinit -d ~/.zcompdump-olkovale
+# compinit -d ~/.zcompdump-olkovale
 #
 # turn on vi mode
 set -o vi
